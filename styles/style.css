@@ -1,0 +1,315 @@
+:root {
+  --primary-color: #040404;
+  --secondary-color: #cdcdcd;
+  --primary-font: "Spartan", sans-serif;
+}
+body {
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+.photo-source {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.photo-source a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.page-footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: var(--primary-color);
+}
+
+/* HOMEPAGE */
+.homepage-body {
+  background-color: var(--primary-color);
+}
+
+.hero {
+  color: var(--secondary-color);
+  padding: 20px 20px;
+  margin: 60px 10px;
+}
+
+.hero h1 {
+  font-size: 135px;
+  font-weight: 700;
+  margin-top: 240px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.hero-dot {
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin-left: 0 auto;
+}
+
+.hero-dot:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 20px 20px;
+  border: 1px solid var(--secondary-color);
+}
+
+/* ABOUT PAGE */
+.navbar {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.navbar-brand,
+.navbar-nav a {
+  color: var(--secondary-color) !important;
+}
+.navbar-nav a {
+  font-size: 13px !important;
+}
+
+.interest {
+  margin-top: 33px;
+}
+
+.more-about-me {
+  margin-top: 52px;
+}
+
+.quotes {
+  margin-top: 75px;
+  margin-bottom: 150px;
+}
+
+.quotes p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.profile-photo {
+  padding-left: 45px;
+}
+.right-bar {
+  float: right;
+  border: 1px solid var(--primary-color);
+}
+/* PROJECTS PAGE*/
+
+.project-details,
+.about-details,
+.contact-details {
+  text-align: center;
+  padding: 60px 20px;
+  margin: 40px 40px 0;
+}
+
+.details-paragraph,
+.more-about-me p,
+.about-details p {
+  margin-top: 20px;
+}
+.parallax-source {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-style: italic;
+}
+.weather-project,
+.fall-project,
+.watch-project {
+  margin: 120px 0;
+}
+.launch-link {
+  text-align: center;
+  margin-top: 20px;
+  transition: ease-in-out;
+}
+.primary-link {
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.primary-link:hover {
+  font-weight: bold;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.row.tech-list {
+  margin-left: 100px;
+}
+.tech-details {
+  text-align: center;
+  padding: 60px 20px 0;
+  margin: 40px 40px 20px;
+}
+
+.tech-skills {
+  padding-bottom: 15px;
+  margin-bottom: 150px;
+}
+.tech-list {
+  text-align: center;
+  padding: 15px;
+}
+.tech-icon {
+  font-size: 40px;
+}
+.tech-image {
+  max-height: 40px;
+}
+
+/* CONTACT PAGE */
+
+.fa-envelope {
+  font-size: 75px;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.fa-envelope:hover {
+  font-size: 95px;
+}
+
+/* Media-queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 116px;
+    margin-left: 4px;
+  }
+  .hero-dot {
+    color: var(--secondary-color);
+    font-size: 23px;
+    margin-left: 0 auto;
+  }
+
+  .details-paragraph {
+    margin: 40 px 0;
+    padding: 60 px;
+    text-align: center;
+  }
+  .about-details p {
+    padding: 0;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .quotes {
+    margin-top: 0px;
+  }
+  .profile-photo {
+    padding-left: 0px;
+  }
+
+  .more-about-me {
+    display: none;
+  }
+
+  .project-info,
+  .project-details,
+  .tech-details,
+  .about-details,
+  .contact-details {
+    margin: 0 5px 0 5px;
+  }
+  .project-image {
+    display: none;
+  }
+
+  .launch-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .tech-col {
+    padding: 0 6px;
+  }
+  .tech {
+    font-size: 7px;
+  }
+  .tech-icon {
+    font-size: 30px;
+  }
+  .row.tech-list {
+    margin-left: 8px;
+  }
+
+  .weather-project,
+  .fall-project,
+  .watch-project {
+    margin: 60px 0;
+  }
+
+  .tech-details {
+    padding: 0 20px 0;
+  }
+
+  .tech-skills {
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+  }
+
+  .photo-source {
+    font-size: 5px;
+  }
+  .contact-details p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .fa-envelope {
+    font-size: 50px;
+  }
+
+  .fa-envelope:hover {
+    font-size: 70px;
+  }
+}
